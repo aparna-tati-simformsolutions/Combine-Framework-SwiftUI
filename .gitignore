@@ -21,6 +21,7 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+*.generated.swift
 
 ## Obj-C/Swift specific
 *.hmap
@@ -29,6 +30,16 @@ DerivedData/
 *.ipa
 *.dSYM.zip
 *.dSYM
+
+Pods/
+
+fastlane/
+Gemfile.lock
+Podfile.lock
+*.xcodeproj/xcuserdata/
+*.xcworkspace/
+*.junit.xml
+*.retry
 
 ## Playgrounds
 timeline.xctimeline
