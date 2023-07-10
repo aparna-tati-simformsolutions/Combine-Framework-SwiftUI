@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		01C62884F6FAD9D445476621 /* Pods_CombineFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76BA3838A8BB446DD70A0EFA /* Pods_CombineFramework.framework */; };
 		1CAF9FC9FD3ABDFC3BB06E9D /* Pods_CombineFramework_CombineFrameworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39AD8CF97AEA338E2B5108EA /* Pods_CombineFramework_CombineFrameworkUITests.framework */; };
+		B98696FF2A5BD7B400048412 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98696FE2A5BD7B400048412 /* SignUpViewModel.swift */; };
+		B98697022A5BD8D700048412 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98697012A5BD8D700048412 /* SignUpView.swift */; };
 		B9CFEAE52A55410100CFCA8F /* CombineFrameworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CFEAE42A55410100CFCA8F /* CombineFrameworkApp.swift */; };
 		B9CFEAE72A55410100CFCA8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CFEAE62A55410100CFCA8F /* ContentView.swift */; };
 		B9CFEAE92A55410200CFCA8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9CFEAE82A55410200CFCA8F /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 		AA6FC04C93F1D95A6F1A3FDB /* Pods-CombineFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineFrameworkTests.debug.xcconfig"; path = "Target Support Files/Pods-CombineFrameworkTests/Pods-CombineFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ADD7F4575634804BEA771514 /* Pods-CombineFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineFramework.release.xcconfig"; path = "Target Support Files/Pods-CombineFramework/Pods-CombineFramework.release.xcconfig"; sourceTree = "<group>"; };
 		B6C5EC5326F8AEB53DCB0AE2 /* Pods-CombineFramework-CombineFrameworkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineFramework-CombineFrameworkUITests.release.xcconfig"; path = "Target Support Files/Pods-CombineFramework-CombineFrameworkUITests/Pods-CombineFramework-CombineFrameworkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B98696FE2A5BD7B400048412 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		B98697012A5BD8D700048412 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		B9CFEAE12A55410100CFCA8F /* CombineFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CFEAE42A55410100CFCA8F /* CombineFrameworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineFrameworkApp.swift; sourceTree = "<group>"; };
 		B9CFEAE62A55410100CFCA8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +100,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B98696FC2A5BD76D00048412 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				B98697002A5BD8C400048412 /* View */,
+				B98696FD2A5BD79F00048412 /* ViewModel */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		B98696FD2A5BD79F00048412 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B98696FE2A5BD7B400048412 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B98697002A5BD8C400048412 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B98697012A5BD8D700048412 /* SignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B9CFEAD82A55410100CFCA8F = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +150,7 @@
 		B9CFEAE32A55410100CFCA8F /* CombineFramework */ = {
 			isa = PBXGroup;
 			children = (
+				B98696FC2A5BD76D00048412 /* Authentication */,
 				B9CFEAE42A55410100CFCA8F /* CombineFrameworkApp.swift */,
 				B9CFEAE62A55410100CFCA8F /* ContentView.swift */,
 				B9CFEAE82A55410200CFCA8F /* Assets.xcassets */,
@@ -426,7 +456,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B98697022A5BD8D700048412 /* SignUpView.swift in Sources */,
 				B9CFEAE72A55410100CFCA8F /* ContentView.swift in Sources */,
+				B98696FF2A5BD7B400048412 /* SignUpViewModel.swift in Sources */,
 				B9CFEAE52A55410100CFCA8F /* CombineFrameworkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

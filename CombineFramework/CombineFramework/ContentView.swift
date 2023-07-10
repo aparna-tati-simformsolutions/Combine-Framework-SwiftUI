@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isNavigateToAuthentication = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            if self.isNavigateToAuthentication {
+                SignUpView()
+            } else {
+                Rectangle()
+                    .background(.black)
+                Image(systemName: "square.2.stack.3d.bottom.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 150, height: 200)
+                    .foregroundColor(.white)
+            }
         }
-        .padding()
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                withAnimation {
+                    isNavigateToAuthentication = true
+                }
+            }
+        }
     }
 }
 
