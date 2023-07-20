@@ -58,6 +58,7 @@
 		B9CFEAFB2A55410200CFCA8F /* CombineFrameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineFrameworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CFEAFF2A55410200CFCA8F /* CombineFrameworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineFrameworkUITests.swift; sourceTree = "<group>"; };
 		B9CFEB012A55410200CFCA8F /* CombineFrameworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineFrameworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B9D229CA2A693291003642BC /* PublisherOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PublisherOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D47382980F43B1E3DBF508A8 /* Pods_CombineFrameworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CombineFrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC761500DF07C1CBBAFDFE8 /* Pods-CombineFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineFrameworkTests.release.xcconfig"; path = "Target Support Files/Pods-CombineFrameworkTests/Pods-CombineFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +151,7 @@
 		B9CFEAE32A55410100CFCA8F /* CombineFramework */ = {
 			isa = PBXGroup;
 			children = (
+				B9D229C92A693265003642BC /* Operators */,
 				B98696FC2A5BD76D00048412 /* Authentication */,
 				B9CFEAE42A55410100CFCA8F /* CombineFrameworkApp.swift */,
 				B9CFEAE62A55410100CFCA8F /* ContentView.swift */,
@@ -182,6 +184,14 @@
 				B9CFEB012A55410200CFCA8F /* CombineFrameworkUITestsLaunchTests.swift */,
 			);
 			path = CombineFrameworkUITests;
+			sourceTree = "<group>";
+		};
+		B9D229C92A693265003642BC /* Operators */ = {
+			isa = PBXGroup;
+			children = (
+				B9D229CA2A693291003642BC /* PublisherOperators.playground */,
+			);
+			path = Operators;
 			sourceTree = "<group>";
 		};
 		FB0F5DEC1DDB663D762FCA58 /* Pods */ = {
