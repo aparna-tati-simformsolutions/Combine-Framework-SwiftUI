@@ -11,30 +11,36 @@ struct SignUpView: View {
     @ObservedObject private var signUpViewModel = SignUpViewModel()
     
     var body: some View {
-        VStack(spacing: 0) {
-            Form {
-                Section {
-                    TextField("Name", text: $signUpViewModel.userName)
-                        .autocorrectionDisabled(true)
-                        .keyboardType(.asciiCapable)
-                    TextField("Email", text: $signUpViewModel.userEmail)
-                        .autocorrectionDisabled(true)
-                        .keyboardType(.emailAddress)
-                    SecureField("Password", text: $signUpViewModel.userPassword)
-                    SecureField("Comfirm Password", text: $signUpViewModel.userConfirmPassword)
+        NavigationView(content: {
+            VStack(spacing: 0) {
+                Form {
+                    Section {
+                        TextField("Name", text: $signUpViewModel.userName)
+                            .autocorrectionDisabled(true)
+                            .keyboardType(.asciiCapable)
+                        TextField("Email", text: $signUpViewModel.userEmail)
+                            .autocorrectionDisabled(true)
+                            .keyboardType(.emailAddress)
+                        SecureField("Password", text: $signUpViewModel.userPassword)
+                        SecureField("Comfirm Password", text: $signUpViewModel.userConfirmPassword)
+                    }
+                    Button("Sign Up") {
+                        signUpViewModel.signUp()
+                        NavigationLink(destination: UsersView(), isActive: $signUpViewModel.isLoggedIn) {
+                            UsersView()
+                        }
+                    }
+                    .padding(10)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.black)
+                    .foregroundColor(.white)
+                    .opacity(buttonOpacity)
+                    .disabled(signUpViewModel.isFormValid)
+                    .cornerRadius(10)
                 }
-                Button("Sign Up") {
-                    signUpViewModel.signUp()
-                }
-                .padding(10)
-                .frame(maxWidth: .infinity)
-                .background(Color.black)
-                .foregroundColor(.white)
-                .opacity(buttonOpacity)
-                .disabled(signUpViewModel.isFormValid)
-                .cornerRadius(10)
             }
-        }
+        }).navigationTitle("SignUp")
+       
     }
     
     var buttonOpacity: Double {

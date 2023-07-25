@@ -11,23 +11,25 @@ struct ContentView: View {
     @State private var isNavigateToAuthentication = false
     
     var body: some View {
-        ZStack {
-            if self.isNavigateToAuthentication {
-                SignUpView()
-            } else {
-                Rectangle()
-                    .background(.black)
-                Image(systemName: "square.2.stack.3d.bottom.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 150, height: 200)
-                    .foregroundColor(.white)
+        NavigationView {
+            ZStack {
+                if self.isNavigateToAuthentication {
+                    UsersView()
+                } else {
+                    Rectangle()
+                        .background(.black)
+                    Image(systemName: "square.2.stack.3d.bottom.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 150, height: 200)
+                        .foregroundColor(.white)
+                }
             }
-        }
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                withAnimation {
-                    isNavigateToAuthentication = true
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    withAnimation {
+                        isNavigateToAuthentication = true
+                    }
                 }
             }
         }

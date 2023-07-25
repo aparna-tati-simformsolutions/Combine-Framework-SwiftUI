@@ -18,6 +18,10 @@
 		B9CFEAF62A55410200CFCA8F /* CombineFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CFEAF52A55410200CFCA8F /* CombineFrameworkTests.swift */; };
 		B9CFEB002A55410200CFCA8F /* CombineFrameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CFEAFF2A55410200CFCA8F /* CombineFrameworkUITests.swift */; };
 		B9CFEB022A55410200CFCA8F /* CombineFrameworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CFEB012A55410200CFCA8F /* CombineFrameworkUITestsLaunchTests.swift */; };
+		B9E6EDCC2A6F978A005A40DB /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDCB2A6F978A005A40DB /* UsersView.swift */; };
+		B9E6EDCF2A6F97AF005A40DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDCE2A6F97AF005A40DB /* User.swift */; };
+		B9E6EDD22A6F97DC005A40DB /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDD12A6F97DC005A40DB /* UserViewModel.swift */; };
+		B9E6EDD42A6F9FE5005A40DB /* UsersRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDD32A6F9FE5005A40DB /* UsersRowView.swift */; };
 		FA35D24C9670BDF00EFC6311 /* Pods_CombineFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47382980F43B1E3DBF508A8 /* Pods_CombineFrameworkTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +63,10 @@
 		B9CFEAFF2A55410200CFCA8F /* CombineFrameworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineFrameworkUITests.swift; sourceTree = "<group>"; };
 		B9CFEB012A55410200CFCA8F /* CombineFrameworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineFrameworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B9D229CA2A693291003642BC /* PublisherOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PublisherOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B9E6EDCB2A6F978A005A40DB /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		B9E6EDCE2A6F97AF005A40DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B9E6EDD12A6F97DC005A40DB /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		B9E6EDD32A6F9FE5005A40DB /* UsersRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRowView.swift; sourceTree = "<group>"; };
 		D47382980F43B1E3DBF508A8 /* Pods_CombineFrameworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CombineFrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC761500DF07C1CBBAFDFE8 /* Pods-CombineFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineFrameworkTests.release.xcconfig"; path = "Target Support Files/Pods-CombineFrameworkTests/Pods-CombineFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +159,7 @@
 		B9CFEAE32A55410100CFCA8F /* CombineFramework */ = {
 			isa = PBXGroup;
 			children = (
+				B9E6EDC82A6F933A005A40DB /* Conveience Publishers */,
 				B9D229C92A693265003642BC /* Operators */,
 				B98696FC2A5BD76D00048412 /* Authentication */,
 				B9CFEAE42A55410100CFCA8F /* CombineFrameworkApp.swift */,
@@ -192,6 +201,49 @@
 				B9D229CA2A693291003642BC /* PublisherOperators.playground */,
 			);
 			path = Operators;
+			sourceTree = "<group>";
+		};
+		B9E6EDC82A6F933A005A40DB /* Conveience Publishers */ = {
+			isa = PBXGroup;
+			children = (
+				B9E6EDC92A6F975C005A40DB /* FuturePublisher */,
+			);
+			path = "Conveience Publishers";
+			sourceTree = "<group>";
+		};
+		B9E6EDC92A6F975C005A40DB /* FuturePublisher */ = {
+			isa = PBXGroup;
+			children = (
+				B9E6EDD02A6F97CE005A40DB /* ViewModel */,
+				B9E6EDCD2A6F978D005A40DB /* Model */,
+				B9E6EDCA2A6F977A005A40DB /* View */,
+			);
+			path = FuturePublisher;
+			sourceTree = "<group>";
+		};
+		B9E6EDCA2A6F977A005A40DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9E6EDCB2A6F978A005A40DB /* UsersView.swift */,
+				B9E6EDD32A6F9FE5005A40DB /* UsersRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9E6EDCD2A6F978D005A40DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9E6EDCE2A6F97AF005A40DB /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B9E6EDD02A6F97CE005A40DB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B9E6EDD12A6F97DC005A40DB /* UserViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FB0F5DEC1DDB663D762FCA58 /* Pods */ = {
@@ -467,7 +519,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B98697022A5BD8D700048412 /* SignUpView.swift in Sources */,
+				B9E6EDD22A6F97DC005A40DB /* UserViewModel.swift in Sources */,
+				B9E6EDD42A6F9FE5005A40DB /* UsersRowView.swift in Sources */,
 				B9CFEAE72A55410100CFCA8F /* ContentView.swift in Sources */,
+				B9E6EDCC2A6F978A005A40DB /* UsersView.swift in Sources */,
+				B9E6EDCF2A6F97AF005A40DB /* User.swift in Sources */,
 				B98696FF2A5BD7B400048412 /* SignUpViewModel.swift in Sources */,
 				B9CFEAE52A55410100CFCA8F /* CombineFrameworkApp.swift in Sources */,
 			);

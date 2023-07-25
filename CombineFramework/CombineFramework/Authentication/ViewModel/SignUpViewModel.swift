@@ -15,6 +15,7 @@ class SignUpViewModel: ObservableObject {
     @Published var userPassword = ""
     @Published var userConfirmPassword = ""
     @Published var isFormValid = false
+    @Published var isLoggedIn = false
     private var publishers = Set<AnyCancellable>()
 }
 
@@ -71,7 +72,7 @@ extension SignUpViewModel {
             .assign(to: \.isFormValid, on: self)
             .store(in: &publishers)
         if userEmail == "Ap123@gmail.com" && userPassword == "123456789" {
-            print("User Logged in succesfully")
+            isLoggedIn = true
         }
     }
 }
