@@ -1,4 +1,5 @@
 import UIKit
+import Combine
 
 let myPublisher = (1...10).publisher
 let secondPublisher = (1...10).publisher
@@ -199,3 +200,40 @@ _ = myPublisher.zip(thirdPublisher)
     .sink(receiveValue: { result in
         print(result)
     })
+
+// MARK: - Empty Publisher
+let emptyPublisher = Empty<Int, Never>()
+
+emptyPublisher.sink { completion in
+    switch completion {
+    case .finished:
+        print("Empty Publisher finished")
+    case .failure:
+        print("Empty publisher failed")
+    }
+} receiveValue: { value in
+    print(value)
+}
+
+// MARK: - Fail Publisher
+enum CustomError: Error {
+    case exampleError
+}
+
+let failPublisher = Fail<Int, Error>(error: CustomError.exampleError)
+
+let subscription = failPublisher.sink(
+    receiveCompletion: { completion in
+        switch completion {
+        case .finished:
+            print("Publisher finished.")
+        case .failure(let error):
+            print("Error: \(error)")
+        }
+    },
+    receiveValue: { value in
+        print("Received value: \(value)")
+    }
+)
+
+
