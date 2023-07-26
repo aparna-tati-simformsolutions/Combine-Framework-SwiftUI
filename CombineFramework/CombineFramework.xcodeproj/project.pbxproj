@@ -68,6 +68,7 @@
 		B9D28FA22A70EEAE0003C26A /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		B9D28FA42A70EEBD0003C26A /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		B9D28FA62A70FB0B0003C26A /* Cancellable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Cancellable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B9D28FA82A7114950003C26A /* SubscriberDemo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SubscriberDemo.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B9E6EDCB2A6F978A005A40DB /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		B9E6EDCE2A6F97AF005A40DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B9E6EDD12A6F97DC005A40DB /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -164,6 +165,7 @@
 		B9CFEAE32A55410100CFCA8F /* CombineFramework */ = {
 			isa = PBXGroup;
 			children = (
+				B9D28FA72A7114760003C26A /* Subscribers */,
 				B9D28F9F2A70EDE60003C26A /* Cancellable */,
 				B9E6EDC82A6F933A005A40DB /* Conveience Publishers */,
 				B9D229C92A693265003642BC /* Operators */,
@@ -233,6 +235,14 @@
 				B9D28FA22A70EEAE0003C26A /* TimerView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B9D28FA72A7114760003C26A /* Subscribers */ = {
+			isa = PBXGroup;
+			children = (
+				B9D28FA82A7114950003C26A /* SubscriberDemo.playground */,
+			);
+			path = Subscribers;
 			sourceTree = "<group>";
 		};
 		B9E6EDC82A6F933A005A40DB /* Conveience Publishers */ = {
