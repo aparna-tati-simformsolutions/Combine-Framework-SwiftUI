@@ -14,7 +14,7 @@ struct ContentView: View {
         NavigationView {
             ZStack {
                 if self.isNavigateToAuthentication {
-                    UsersView()
+                    NumberListView()
                 } else {
                     Rectangle()
                         .background(.black)
