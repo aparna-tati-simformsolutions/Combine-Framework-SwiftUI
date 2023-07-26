@@ -22,6 +22,10 @@
 		B9D28FA52A70EEBD0003C26A /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D28FA42A70EEBD0003C26A /* TimerViewModel.swift */; };
 		B9D28FAD2A7144320003C26A /* NumberListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D28FAC2A7144320003C26A /* NumberListView.swift */; };
 		B9D28FAF2A7144490003C26A /* NumberListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D28FAE2A7144490003C26A /* NumberListViewModel.swift */; };
+		B9D28FB22A7150750003C26A /* PostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D28FB12A7150750003C26A /* PostManager.swift */; };
+		B9D28FB42A7150800003C26A /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D28FB32A7150800003C26A /* PostViewModel.swift */; };
+		B9D28FB62A7150920003C26A /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D28FB52A7150920003C26A /* PostView.swift */; };
+		B9D28FB92A7150BB0003C26A /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D28FB82A7150BB0003C26A /* PostModel.swift */; };
 		B9E6EDCC2A6F978A005A40DB /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDCB2A6F978A005A40DB /* UsersView.swift */; };
 		B9E6EDCF2A6F97AF005A40DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDCE2A6F97AF005A40DB /* User.swift */; };
 		B9E6EDD22A6F97DC005A40DB /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDD12A6F97DC005A40DB /* UserViewModel.swift */; };
@@ -73,6 +77,10 @@
 		B9D28FA82A7114950003C26A /* SubscriberDemo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SubscriberDemo.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B9D28FAC2A7144320003C26A /* NumberListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberListView.swift; sourceTree = "<group>"; };
 		B9D28FAE2A7144490003C26A /* NumberListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberListViewModel.swift; sourceTree = "<group>"; };
+		B9D28FB12A7150750003C26A /* PostManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostManager.swift; sourceTree = "<group>"; };
+		B9D28FB32A7150800003C26A /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		B9D28FB52A7150920003C26A /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		B9D28FB82A7150BB0003C26A /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		B9E6EDCB2A6F978A005A40DB /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		B9E6EDCE2A6F97AF005A40DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B9E6EDD12A6F97DC005A40DB /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -253,6 +261,8 @@
 		B9D28FA92A7144070003C26A /* Schedulers */ = {
 			isa = PBXGroup;
 			children = (
+				B9D28FB72A7150AE0003C26A /* Model */,
+				B9D28FB02A7150640003C26A /* Manager */,
 				B9D28FAB2A71441E0003C26A /* ViewModel */,
 				B9D28FAA2A7144150003C26A /* View */,
 			);
@@ -263,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				B9D28FAC2A7144320003C26A /* NumberListView.swift */,
+				B9D28FB52A7150920003C26A /* PostView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,8 +282,25 @@
 			isa = PBXGroup;
 			children = (
 				B9D28FAE2A7144490003C26A /* NumberListViewModel.swift */,
+				B9D28FB32A7150800003C26A /* PostViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B9D28FB02A7150640003C26A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B9D28FB12A7150750003C26A /* PostManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B9D28FB72A7150AE0003C26A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9D28FB82A7150BB0003C26A /* PostModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B9E6EDC82A6F933A005A40DB /* Conveience Publishers */ = {
@@ -591,16 +619,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9D28FA52A70EEBD0003C26A /* TimerViewModel.swift in Sources */,
+				B9D28FB92A7150BB0003C26A /* PostModel.swift in Sources */,
 				B9D28FA32A70EEAE0003C26A /* TimerView.swift in Sources */,
 				B98697022A5BD8D700048412 /* SignUpView.swift in Sources */,
 				B9E6EDD22A6F97DC005A40DB /* UserViewModel.swift in Sources */,
 				B9E6EDD42A6F9FE5005A40DB /* UsersRowView.swift in Sources */,
 				B9D28FAF2A7144490003C26A /* NumberListViewModel.swift in Sources */,
 				B9CFEAE72A55410100CFCA8F /* ContentView.swift in Sources */,
+				B9D28FB22A7150750003C26A /* PostManager.swift in Sources */,
 				B9E6EDCC2A6F978A005A40DB /* UsersView.swift in Sources */,
 				B9E6EDCF2A6F97AF005A40DB /* User.swift in Sources */,
 				B98696FF2A5BD7B400048412 /* SignUpViewModel.swift in Sources */,
+				B9D28FB42A7150800003C26A /* PostViewModel.swift in Sources */,
 				B9D28FAD2A7144320003C26A /* NumberListView.swift in Sources */,
+				B9D28FB62A7150920003C26A /* PostView.swift in Sources */,
 				B9CFEAE52A55410100CFCA8F /* CombineFrameworkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
