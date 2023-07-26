@@ -18,6 +18,8 @@
 		B9CFEAF62A55410200CFCA8F /* CombineFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CFEAF52A55410200CFCA8F /* CombineFrameworkTests.swift */; };
 		B9CFEB002A55410200CFCA8F /* CombineFrameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CFEAFF2A55410200CFCA8F /* CombineFrameworkUITests.swift */; };
 		B9CFEB022A55410200CFCA8F /* CombineFrameworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CFEB012A55410200CFCA8F /* CombineFrameworkUITestsLaunchTests.swift */; };
+		B9D28FA32A70EEAE0003C26A /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D28FA22A70EEAE0003C26A /* TimerView.swift */; };
+		B9D28FA52A70EEBD0003C26A /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D28FA42A70EEBD0003C26A /* TimerViewModel.swift */; };
 		B9E6EDCC2A6F978A005A40DB /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDCB2A6F978A005A40DB /* UsersView.swift */; };
 		B9E6EDCF2A6F97AF005A40DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDCE2A6F97AF005A40DB /* User.swift */; };
 		B9E6EDD22A6F97DC005A40DB /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDD12A6F97DC005A40DB /* UserViewModel.swift */; };
@@ -63,6 +65,8 @@
 		B9CFEAFF2A55410200CFCA8F /* CombineFrameworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineFrameworkUITests.swift; sourceTree = "<group>"; };
 		B9CFEB012A55410200CFCA8F /* CombineFrameworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineFrameworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B9D229CA2A693291003642BC /* PublisherOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PublisherOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B9D28FA22A70EEAE0003C26A /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		B9D28FA42A70EEBD0003C26A /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		B9E6EDCB2A6F978A005A40DB /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		B9E6EDCE2A6F97AF005A40DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B9E6EDD12A6F97DC005A40DB /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 		B9CFEAE32A55410100CFCA8F /* CombineFramework */ = {
 			isa = PBXGroup;
 			children = (
+				B9D28F9F2A70EDE60003C26A /* Cancellable */,
 				B9E6EDC82A6F933A005A40DB /* Conveience Publishers */,
 				B9D229C92A693265003642BC /* Operators */,
 				B98696FC2A5BD76D00048412 /* Authentication */,
@@ -201,6 +206,31 @@
 				B9D229CA2A693291003642BC /* PublisherOperators.playground */,
 			);
 			path = Operators;
+			sourceTree = "<group>";
+		};
+		B9D28F9F2A70EDE60003C26A /* Cancellable */ = {
+			isa = PBXGroup;
+			children = (
+				B9D28FA12A70EE970003C26A /* View */,
+				B9D28FA02A70EE8E0003C26A /* ViewModel */,
+			);
+			path = Cancellable;
+			sourceTree = "<group>";
+		};
+		B9D28FA02A70EE8E0003C26A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B9D28FA42A70EEBD0003C26A /* TimerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B9D28FA12A70EE970003C26A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9D28FA22A70EEAE0003C26A /* TimerView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B9E6EDC82A6F933A005A40DB /* Conveience Publishers */ = {
@@ -518,6 +548,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9D28FA52A70EEBD0003C26A /* TimerViewModel.swift in Sources */,
+				B9D28FA32A70EEAE0003C26A /* TimerView.swift in Sources */,
 				B98697022A5BD8D700048412 /* SignUpView.swift in Sources */,
 				B9E6EDD22A6F97DC005A40DB /* UserViewModel.swift in Sources */,
 				B9E6EDD42A6F9FE5005A40DB /* UsersRowView.swift in Sources */,

@@ -236,4 +236,15 @@ let subscription = failPublisher.sink(
     }
 )
 
+// MARK: - Cancellables
+let timerPublisher = Timer.publish(every: 1, on: .main, in: .default)
+    .prefix(5)
+
+let cancellable = timerPublisher.sink { value in
+    print("Received value: \(value)")
+}
+
+DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
+    cancellable.cancel()
+}
 
