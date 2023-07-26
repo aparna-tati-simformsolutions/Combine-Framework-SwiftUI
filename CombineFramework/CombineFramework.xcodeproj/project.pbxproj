@@ -67,6 +67,7 @@
 		B9D229CA2A693291003642BC /* PublisherOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PublisherOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B9D28FA22A70EEAE0003C26A /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		B9D28FA42A70EEBD0003C26A /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		B9D28FA62A70FB0B0003C26A /* Cancellable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Cancellable.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B9E6EDCB2A6F978A005A40DB /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		B9E6EDCE2A6F97AF005A40DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B9E6EDD12A6F97DC005A40DB /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -213,6 +214,7 @@
 			children = (
 				B9D28FA12A70EE970003C26A /* View */,
 				B9D28FA02A70EE8E0003C26A /* ViewModel */,
+				B9D28FA62A70FB0B0003C26A /* Cancellable.playground */,
 			);
 			path = Cancellable;
 			sourceTree = "<group>";
