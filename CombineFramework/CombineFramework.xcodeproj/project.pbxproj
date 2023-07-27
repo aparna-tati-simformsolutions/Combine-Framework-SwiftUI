@@ -32,6 +32,8 @@
 		B9D4514F2A726BBF00111851 /* UserDataPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D4514E2A726BBF00111851 /* UserDataPublisher.swift */; };
 		B9D451512A726C2700111851 /* UserDataSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D451502A726C2700111851 /* UserDataSubscription.swift */; };
 		B9D451532A726DED00111851 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D451522A726DED00111851 /* UserListView.swift */; };
+		B9D451562A72813400111851 /* RandomNumberListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D451552A72813400111851 /* RandomNumberListView.swift */; };
+		B9D451582A72814700111851 /* RandomNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D451572A72814700111851 /* RandomNumberViewModel.swift */; };
 		B9E6EDCC2A6F978A005A40DB /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDCB2A6F978A005A40DB /* UsersView.swift */; };
 		B9E6EDCF2A6F97AF005A40DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDCE2A6F97AF005A40DB /* User.swift */; };
 		B9E6EDD22A6F97DC005A40DB /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDD12A6F97DC005A40DB /* UserViewModel.swift */; };
@@ -94,6 +96,8 @@
 		B9D4514E2A726BBF00111851 /* UserDataPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataPublisher.swift; sourceTree = "<group>"; };
 		B9D451502A726C2700111851 /* UserDataSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSubscription.swift; sourceTree = "<group>"; };
 		B9D451522A726DED00111851 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		B9D451552A72813400111851 /* RandomNumberListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberListView.swift; sourceTree = "<group>"; };
+		B9D451572A72814700111851 /* RandomNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberViewModel.swift; sourceTree = "<group>"; };
 		B9E6EDCB2A6F978A005A40DB /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		B9E6EDCE2A6F97AF005A40DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B9E6EDD12A6F97DC005A40DB /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 		B9CFEAE32A55410100CFCA8F /* CombineFramework */ = {
 			isa = PBXGroup;
 			children = (
+				B9D451542A72811500111851 /* Connectable Publisher */,
 				B9D451412A723CE600111851 /* Custom Publisher */,
 				B9D28FA92A7144070003C26A /* Schedulers */,
 				B9D28FA72A7114760003C26A /* Custome Subscriber */,
@@ -345,6 +350,15 @@
 				B9D451522A726DED00111851 /* UserListView.swift */,
 			);
 			path = UserPublisher;
+			sourceTree = "<group>";
+		};
+		B9D451542A72811500111851 /* Connectable Publisher */ = {
+			isa = PBXGroup;
+			children = (
+				B9D451552A72813400111851 /* RandomNumberListView.swift */,
+				B9D451572A72814700111851 /* RandomNumberViewModel.swift */,
+			);
+			path = "Connectable Publisher";
 			sourceTree = "<group>";
 		};
 		B9E6EDC82A6F933A005A40DB /* Conveience Publishers */ = {
@@ -674,6 +688,7 @@
 				B9D28FAF2A7144490003C26A /* NumberListViewModel.swift in Sources */,
 				B9CFEAE72A55410100CFCA8F /* ContentView.swift in Sources */,
 				B9D28FB22A7150750003C26A /* PostManager.swift in Sources */,
+				B9D451582A72814700111851 /* RandomNumberViewModel.swift in Sources */,
 				B9E6EDCC2A6F978A005A40DB /* UsersView.swift in Sources */,
 				B9E6EDCF2A6F97AF005A40DB /* User.swift in Sources */,
 				B9D451512A726C2700111851 /* UserDataSubscription.swift in Sources */,
@@ -683,6 +698,7 @@
 				B9D4514D2A726AF100111851 /* UserModel.swift in Sources */,
 				B9D28FAD2A7144320003C26A /* NumberListView.swift in Sources */,
 				B9D28FB62A7150920003C26A /* PostView.swift in Sources */,
+				B9D451562A72813400111851 /* RandomNumberListView.swift in Sources */,
 				B9CFEAE52A55410100CFCA8F /* CombineFrameworkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
