@@ -23,7 +23,7 @@ class TimeSubscription<S: Subscriber>: Subscription where S.Input == Date {
     }
     
     func request(_ demand: Subscribers.Demand) {
-        // 
+        //
     }
     
     func cancel() {

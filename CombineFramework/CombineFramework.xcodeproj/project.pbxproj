@@ -28,6 +28,10 @@
 		B9D451432A72432300111851 /* TimerPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D451422A72432300111851 /* TimerPublisher.swift */; };
 		B9D451452A72439F00111851 /* TimerSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D451442A72439F00111851 /* TimerSubscription.swift */; };
 		B9D451492A7249D800111851 /* TimerViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D451482A7249D800111851 /* TimerViewDemo.swift */; };
+		B9D4514D2A726AF100111851 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D4514C2A726AF100111851 /* UserModel.swift */; };
+		B9D4514F2A726BBF00111851 /* UserDataPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D4514E2A726BBF00111851 /* UserDataPublisher.swift */; };
+		B9D451512A726C2700111851 /* UserDataSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D451502A726C2700111851 /* UserDataSubscription.swift */; };
+		B9D451532A726DED00111851 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D451522A726DED00111851 /* UserListView.swift */; };
 		B9E6EDCC2A6F978A005A40DB /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDCB2A6F978A005A40DB /* UsersView.swift */; };
 		B9E6EDCF2A6F97AF005A40DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDCE2A6F97AF005A40DB /* User.swift */; };
 		B9E6EDD22A6F97DC005A40DB /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDD12A6F97DC005A40DB /* UserViewModel.swift */; };
@@ -86,6 +90,10 @@
 		B9D451422A72432300111851 /* TimerPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPublisher.swift; sourceTree = "<group>"; };
 		B9D451442A72439F00111851 /* TimerSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSubscription.swift; sourceTree = "<group>"; };
 		B9D451482A7249D800111851 /* TimerViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewDemo.swift; sourceTree = "<group>"; };
+		B9D4514C2A726AF100111851 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		B9D4514E2A726BBF00111851 /* UserDataPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataPublisher.swift; sourceTree = "<group>"; };
+		B9D451502A726C2700111851 /* UserDataSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSubscription.swift; sourceTree = "<group>"; };
+		B9D451522A726DED00111851 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		B9E6EDCB2A6F978A005A40DB /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		B9E6EDCE2A6F97AF005A40DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B9E6EDD12A6F97DC005A40DB /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -312,11 +320,31 @@
 		B9D451412A723CE600111851 /* Custom Publisher */ = {
 			isa = PBXGroup;
 			children = (
+				B9D4514B2A726A2D00111851 /* UserPublisher */,
+				B9D4514A2A726A1E00111851 /* TimerPublisher */,
+			);
+			path = "Custom Publisher";
+			sourceTree = "<group>";
+		};
+		B9D4514A2A726A1E00111851 /* TimerPublisher */ = {
+			isa = PBXGroup;
+			children = (
 				B9D451422A72432300111851 /* TimerPublisher.swift */,
 				B9D451442A72439F00111851 /* TimerSubscription.swift */,
 				B9D451482A7249D800111851 /* TimerViewDemo.swift */,
 			);
-			path = "Custom Publisher";
+			path = TimerPublisher;
+			sourceTree = "<group>";
+		};
+		B9D4514B2A726A2D00111851 /* UserPublisher */ = {
+			isa = PBXGroup;
+			children = (
+				B9D4514C2A726AF100111851 /* UserModel.swift */,
+				B9D4514E2A726BBF00111851 /* UserDataPublisher.swift */,
+				B9D451502A726C2700111851 /* UserDataSubscription.swift */,
+				B9D451522A726DED00111851 /* UserListView.swift */,
+			);
+			path = UserPublisher;
 			sourceTree = "<group>";
 		};
 		B9E6EDC82A6F933A005A40DB /* Conveience Publishers */ = {
@@ -639,16 +667,20 @@
 				B9D451432A72432300111851 /* TimerPublisher.swift in Sources */,
 				B9D451492A7249D800111851 /* TimerViewDemo.swift in Sources */,
 				B98697022A5BD8D700048412 /* SignUpView.swift in Sources */,
+				B9D4514F2A726BBF00111851 /* UserDataPublisher.swift in Sources */,
 				B9E6EDD22A6F97DC005A40DB /* UserViewModel.swift in Sources */,
+				B9D451532A726DED00111851 /* UserListView.swift in Sources */,
 				B9E6EDD42A6F9FE5005A40DB /* UsersRowView.swift in Sources */,
 				B9D28FAF2A7144490003C26A /* NumberListViewModel.swift in Sources */,
 				B9CFEAE72A55410100CFCA8F /* ContentView.swift in Sources */,
 				B9D28FB22A7150750003C26A /* PostManager.swift in Sources */,
 				B9E6EDCC2A6F978A005A40DB /* UsersView.swift in Sources */,
 				B9E6EDCF2A6F97AF005A40DB /* User.swift in Sources */,
+				B9D451512A726C2700111851 /* UserDataSubscription.swift in Sources */,
 				B9D451452A72439F00111851 /* TimerSubscription.swift in Sources */,
 				B98696FF2A5BD7B400048412 /* SignUpViewModel.swift in Sources */,
 				B9D28FB42A7150800003C26A /* PostViewModel.swift in Sources */,
+				B9D4514D2A726AF100111851 /* UserModel.swift in Sources */,
 				B9D28FAD2A7144320003C26A /* NumberListView.swift in Sources */,
 				B9D28FB62A7150920003C26A /* PostView.swift in Sources */,
 				B9CFEAE52A55410100CFCA8F /* CombineFrameworkApp.swift in Sources */,
