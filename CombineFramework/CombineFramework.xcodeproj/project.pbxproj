@@ -18,7 +18,6 @@
 		B9CFEAF62A55410200CFCA8F /* CombineFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CFEAF52A55410200CFCA8F /* CombineFrameworkTests.swift */; };
 		B9CFEB002A55410200CFCA8F /* CombineFrameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CFEAFF2A55410200CFCA8F /* CombineFrameworkUITests.swift */; };
 		B9CFEB022A55410200CFCA8F /* CombineFrameworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CFEB012A55410200CFCA8F /* CombineFrameworkUITestsLaunchTests.swift */; };
-		B9D28FA32A70EEAE0003C26A /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D28FA22A70EEAE0003C26A /* TimerView.swift */; };
 		B9D28FA52A70EEBD0003C26A /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D28FA42A70EEBD0003C26A /* TimerViewModel.swift */; };
 		B9D28FAD2A7144320003C26A /* NumberListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D28FAC2A7144320003C26A /* NumberListView.swift */; };
 		B9D28FAF2A7144490003C26A /* NumberListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D28FAE2A7144490003C26A /* NumberListViewModel.swift */; };
@@ -26,6 +25,9 @@
 		B9D28FB42A7150800003C26A /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D28FB32A7150800003C26A /* PostViewModel.swift */; };
 		B9D28FB62A7150920003C26A /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D28FB52A7150920003C26A /* PostView.swift */; };
 		B9D28FB92A7150BB0003C26A /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D28FB82A7150BB0003C26A /* PostModel.swift */; };
+		B9D451432A72432300111851 /* TimerPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D451422A72432300111851 /* TimerPublisher.swift */; };
+		B9D451452A72439F00111851 /* TimerSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D451442A72439F00111851 /* TimerSubscription.swift */; };
+		B9D451492A7249D800111851 /* TimerViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D451482A7249D800111851 /* TimerViewDemo.swift */; };
 		B9E6EDCC2A6F978A005A40DB /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDCB2A6F978A005A40DB /* UsersView.swift */; };
 		B9E6EDCF2A6F97AF005A40DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDCE2A6F97AF005A40DB /* User.swift */; };
 		B9E6EDD22A6F97DC005A40DB /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6EDD12A6F97DC005A40DB /* UserViewModel.swift */; };
@@ -81,6 +83,9 @@
 		B9D28FB32A7150800003C26A /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		B9D28FB52A7150920003C26A /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		B9D28FB82A7150BB0003C26A /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		B9D451422A72432300111851 /* TimerPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPublisher.swift; sourceTree = "<group>"; };
+		B9D451442A72439F00111851 /* TimerSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSubscription.swift; sourceTree = "<group>"; };
+		B9D451482A7249D800111851 /* TimerViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewDemo.swift; sourceTree = "<group>"; };
 		B9E6EDCB2A6F978A005A40DB /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		B9E6EDCE2A6F97AF005A40DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B9E6EDD12A6F97DC005A40DB /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
@@ -177,6 +182,7 @@
 		B9CFEAE32A55410100CFCA8F /* CombineFramework */ = {
 			isa = PBXGroup;
 			children = (
+				B9D451412A723CE600111851 /* Custom Publisher */,
 				B9D28FA92A7144070003C26A /* Schedulers */,
 				B9D28FA72A7114760003C26A /* Subscribers */,
 				B9D28F9F2A70EDE60003C26A /* Cancellable */,
@@ -301,6 +307,16 @@
 				B9D28FB82A7150BB0003C26A /* PostModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B9D451412A723CE600111851 /* Custom Publisher */ = {
+			isa = PBXGroup;
+			children = (
+				B9D451422A72432300111851 /* TimerPublisher.swift */,
+				B9D451442A72439F00111851 /* TimerSubscription.swift */,
+				B9D451482A7249D800111851 /* TimerViewDemo.swift */,
+			);
+			path = "Custom Publisher";
 			sourceTree = "<group>";
 		};
 		B9E6EDC82A6F933A005A40DB /* Conveience Publishers */ = {
@@ -620,7 +636,8 @@
 			files = (
 				B9D28FA52A70EEBD0003C26A /* TimerViewModel.swift in Sources */,
 				B9D28FB92A7150BB0003C26A /* PostModel.swift in Sources */,
-				B9D28FA32A70EEAE0003C26A /* TimerView.swift in Sources */,
+				B9D451432A72432300111851 /* TimerPublisher.swift in Sources */,
+				B9D451492A7249D800111851 /* TimerViewDemo.swift in Sources */,
 				B98697022A5BD8D700048412 /* SignUpView.swift in Sources */,
 				B9E6EDD22A6F97DC005A40DB /* UserViewModel.swift in Sources */,
 				B9E6EDD42A6F9FE5005A40DB /* UsersRowView.swift in Sources */,
@@ -629,6 +646,7 @@
 				B9D28FB22A7150750003C26A /* PostManager.swift in Sources */,
 				B9E6EDCC2A6F978A005A40DB /* UsersView.swift in Sources */,
 				B9E6EDCF2A6F97AF005A40DB /* User.swift in Sources */,
+				B9D451452A72439F00111851 /* TimerSubscription.swift in Sources */,
 				B98696FF2A5BD7B400048412 /* SignUpViewModel.swift in Sources */,
 				B9D28FB42A7150800003C26A /* PostViewModel.swift in Sources */,
 				B9D28FAD2A7144320003C26A /* NumberListView.swift in Sources */,
