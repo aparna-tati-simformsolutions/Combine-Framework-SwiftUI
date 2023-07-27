@@ -192,7 +192,7 @@
 			children = (
 				B9D451412A723CE600111851 /* Custom Publisher */,
 				B9D28FA92A7144070003C26A /* Schedulers */,
-				B9D28FA72A7114760003C26A /* Subscribers */,
+				B9D28FA72A7114760003C26A /* Custome Subscriber */,
 				B9D28F9F2A70EDE60003C26A /* Cancellable */,
 				B9E6EDC82A6F933A005A40DB /* Conveience Publishers */,
 				B9D229C92A693265003642BC /* Operators */,
@@ -264,12 +264,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		B9D28FA72A7114760003C26A /* Subscribers */ = {
+		B9D28FA72A7114760003C26A /* Custome Subscriber */ = {
 			isa = PBXGroup;
 			children = (
 				B9D28FA82A7114950003C26A /* SubscriberDemo.playground */,
 			);
-			path = Subscribers;
+			path = "Custome Subscriber";
 			sourceTree = "<group>";
 		};
 		B9D28FA92A7144070003C26A /* Schedulers */ = {
