@@ -11,6 +11,12 @@
 		1CAF9FC9FD3ABDFC3BB06E9D /* Pods_CombineFramework_CombineFrameworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39AD8CF97AEA338E2B5108EA /* Pods_CombineFramework_CombineFrameworkUITests.framework */; };
 		B98696FF2A5BD7B400048412 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98696FE2A5BD7B400048412 /* SignUpViewModel.swift */; };
 		B98697022A5BD8D700048412 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98697012A5BD8D700048412 /* SignUpView.swift */; };
+		B9B46A8A2A737FD8008EE60B /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B46A892A737FD8008EE60B /* Quote.swift */; };
+		B9B46A8C2A73813F008EE60B /* QuotePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B46A8B2A73813F008EE60B /* QuotePublisher.swift */; };
+		B9B46A8E2A73815A008EE60B /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B46A8D2A73815A008EE60B /* QuoteView.swift */; };
+		B9B46A922A73BE16008EE60B /* AsyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B46A912A73BE16008EE60B /* AsyncView.swift */; };
+		B9B46A942A73BE2A008EE60B /* AsyncViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B46A932A73BE2A008EE60B /* AsyncViewModel.swift */; };
+		B9B46A962A73BE8D008EE60B /* AsyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B46A952A73BE8D008EE60B /* AsyncManager.swift */; };
 		B9CFEAE52A55410100CFCA8F /* CombineFrameworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CFEAE42A55410100CFCA8F /* CombineFrameworkApp.swift */; };
 		B9CFEAE72A55410100CFCA8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CFEAE62A55410100CFCA8F /* ContentView.swift */; };
 		B9CFEAE92A55410200CFCA8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9CFEAE82A55410200CFCA8F /* Assets.xcassets */; };
@@ -68,6 +74,12 @@
 		B6C5EC5326F8AEB53DCB0AE2 /* Pods-CombineFramework-CombineFrameworkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CombineFramework-CombineFrameworkUITests.release.xcconfig"; path = "Target Support Files/Pods-CombineFramework-CombineFrameworkUITests/Pods-CombineFramework-CombineFrameworkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B98696FE2A5BD7B400048412 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		B98697012A5BD8D700048412 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B9B46A892A737FD8008EE60B /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		B9B46A8B2A73813F008EE60B /* QuotePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotePublisher.swift; sourceTree = "<group>"; };
+		B9B46A8D2A73815A008EE60B /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		B9B46A912A73BE16008EE60B /* AsyncView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncView.swift; sourceTree = "<group>"; };
+		B9B46A932A73BE2A008EE60B /* AsyncViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncViewModel.swift; sourceTree = "<group>"; };
+		B9B46A952A73BE8D008EE60B /* AsyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncManager.swift; sourceTree = "<group>"; };
 		B9CFEAE12A55410100CFCA8F /* CombineFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CFEAE42A55410100CFCA8F /* CombineFrameworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineFrameworkApp.swift; sourceTree = "<group>"; };
 		B9CFEAE62A55410100CFCA8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -169,6 +181,26 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B9B46A8F2A73BDEF008EE60B /* Quote */ = {
+			isa = PBXGroup;
+			children = (
+				B9B46A892A737FD8008EE60B /* Quote.swift */,
+				B9B46A8B2A73813F008EE60B /* QuotePublisher.swift */,
+				B9B46A8D2A73815A008EE60B /* QuoteView.swift */,
+			);
+			path = Quote;
+			sourceTree = "<group>";
+		};
+		B9B46A902A73BE05008EE60B /* Async Demo */ = {
+			isa = PBXGroup;
+			children = (
+				B9B46A912A73BE16008EE60B /* AsyncView.swift */,
+				B9B46A932A73BE2A008EE60B /* AsyncViewModel.swift */,
+				B9B46A952A73BE8D008EE60B /* AsyncManager.swift */,
+			);
+			path = "Async Demo";
+			sourceTree = "<group>";
+		};
 		B9CFEAD82A55410100CFCA8F = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +226,7 @@
 		B9CFEAE32A55410100CFCA8F /* CombineFramework */ = {
 			isa = PBXGroup;
 			children = (
+				B9D451592A7295F800111851 /* Async Publisher */,
 				B9D451542A72811500111851 /* Connectable Publisher */,
 				B9D451412A723CE600111851 /* Custom Publisher */,
 				B9D28FA92A7144070003C26A /* Schedulers */,
@@ -359,6 +392,15 @@
 				B9D451572A72814700111851 /* RandomNumberViewModel.swift */,
 			);
 			path = "Connectable Publisher";
+			sourceTree = "<group>";
+		};
+		B9D451592A7295F800111851 /* Async Publisher */ = {
+			isa = PBXGroup;
+			children = (
+				B9B46A902A73BE05008EE60B /* Async Demo */,
+				B9B46A8F2A73BDEF008EE60B /* Quote */,
+			);
+			path = "Async Publisher";
 			sourceTree = "<group>";
 		};
 		B9E6EDC82A6F933A005A40DB /* Conveience Publishers */ = {
@@ -683,22 +725,28 @@
 				B98697022A5BD8D700048412 /* SignUpView.swift in Sources */,
 				B9D4514F2A726BBF00111851 /* UserDataPublisher.swift in Sources */,
 				B9E6EDD22A6F97DC005A40DB /* UserViewModel.swift in Sources */,
+				B9B46A8E2A73815A008EE60B /* QuoteView.swift in Sources */,
 				B9D451532A726DED00111851 /* UserListView.swift in Sources */,
 				B9E6EDD42A6F9FE5005A40DB /* UsersRowView.swift in Sources */,
+				B9B46A962A73BE8D008EE60B /* AsyncManager.swift in Sources */,
 				B9D28FAF2A7144490003C26A /* NumberListViewModel.swift in Sources */,
 				B9CFEAE72A55410100CFCA8F /* ContentView.swift in Sources */,
 				B9D28FB22A7150750003C26A /* PostManager.swift in Sources */,
 				B9D451582A72814700111851 /* RandomNumberViewModel.swift in Sources */,
 				B9E6EDCC2A6F978A005A40DB /* UsersView.swift in Sources */,
 				B9E6EDCF2A6F97AF005A40DB /* User.swift in Sources */,
+				B9B46A8C2A73813F008EE60B /* QuotePublisher.swift in Sources */,
 				B9D451512A726C2700111851 /* UserDataSubscription.swift in Sources */,
+				B9B46A942A73BE2A008EE60B /* AsyncViewModel.swift in Sources */,
 				B9D451452A72439F00111851 /* TimerSubscription.swift in Sources */,
+				B9B46A922A73BE16008EE60B /* AsyncView.swift in Sources */,
 				B98696FF2A5BD7B400048412 /* SignUpViewModel.swift in Sources */,
 				B9D28FB42A7150800003C26A /* PostViewModel.swift in Sources */,
 				B9D4514D2A726AF100111851 /* UserModel.swift in Sources */,
 				B9D28FAD2A7144320003C26A /* NumberListView.swift in Sources */,
 				B9D28FB62A7150920003C26A /* PostView.swift in Sources */,
 				B9D451562A72813400111851 /* RandomNumberListView.swift in Sources */,
+				B9B46A8A2A737FD8008EE60B /* Quote.swift in Sources */,
 				B9CFEAE52A55410100CFCA8F /* CombineFrameworkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
